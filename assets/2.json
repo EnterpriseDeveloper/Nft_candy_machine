@@ -1,0 +1,19 @@
+{
+    "name": "Stickers",
+    "symbol": "STK",
+    "image": "2.png",
+    "properties": {
+      "fiiles": [
+        {
+          "url": "2.png",
+          "type": "image/png"
+        }
+      ],
+      "creators" :[
+          {
+              "address": "EWbEMg4RgQWnhJZ2gNb2BeY82oVuQnzXieQUwdPXPxts",
+              "share": 100
+          }
+      ]
+    }
+  }

@@ -1,0 +1,19 @@
+{
+  "name": "Gouse",
+  "symbol": "GOU",
+  "image": "0.png",
+  "properties": {
+    "fiiles": [
+      {
+        "url": "0.png",
+        "type": "image/png"
+      }
+    ],
+    "creators" :[
+        {
+            "address": "EWbEMg4RgQWnhJZ2gNb2BeY82oVuQnzXieQUwdPXPxts",
+            "share": 100
+        }
+    ]
+  }
+}

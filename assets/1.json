@@ -1,0 +1,19 @@
+{
+    "name": "Baloon",
+    "symbol": "BOL",
+    "image": "1.png",
+    "properties": {
+      "fiiles": [
+        {
+          "url": "1.png",
+          "type": "image/png"
+        }
+      ],
+      "creators" :[
+          {
+              "address": "EWbEMg4RgQWnhJZ2gNb2BeY82oVuQnzXieQUwdPXPxts",
+              "share": 100
+          }
+      ]
+    }
+  }
