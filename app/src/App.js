@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import twitterLogo from "./assets/twitter-logo.svg";
+import CandyMachine from "./CandyMachine";
 
 // Constants
 const TWITTER_HANDLE = "_buildspace";
@@ -20,7 +21,7 @@ const App = () => {
             "Connect with Public Key :",
             reponce.publicKey.toString()
           );
-		  setWalletAddress(reponce.publicKey.toString())
+          setWalletAddress(reponce.publicKey.toString());
         }
       } else {
         alert("Solana object not found! Get a Phantom Wallet");
@@ -31,12 +32,12 @@ const App = () => {
   };
 
   const connectWallet = async () => {
-	  const {solana} = window
-	  if (solana) {
-		  const responce = await solana.connect()
-		  console.log("connected with Public Key", responce.publicKey.toString())
-		  setWalletAddress(responce.publicKey.toString())
-	  }
+    const { solana } = window;
+    if (solana) {
+      const responce = await solana.connect();
+      console.log("connected with Public Key", responce.publicKey.toString());
+      setWalletAddress(responce.publicKey.toString());
+    }
   };
   const renderNotConnectedContainer = () => (
     <button
@@ -63,6 +64,7 @@ const App = () => {
           <p className="sub-text">NFT drop machine with fair mint</p>
           {!walletAddress && renderNotConnectedContainer()}
         </div>
+        {walletAddress && <CandyMachine walletAddress={window.solana}/>}
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
